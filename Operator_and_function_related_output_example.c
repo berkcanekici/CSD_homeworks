@@ -1,4 +1,4 @@
-1. kod
+
 ```
 #include <stdio.h>
 
