@@ -1,4 +1,10 @@
+## Aşağıdaki programların her biri için şu sorulara yanıt vermeye çalışın:
 
+* sentaks hatası var mı?
+* tanımsız davranış *(undefined behavior)* var mı?
+* ekran çıktısı ne olur?
+
+1. kod
 ```
 #include <stdio.h>
 
