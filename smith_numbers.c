@@ -35,11 +35,11 @@ int sum_prime(int);
 int main() {
 
     for(int i = 1; i < SIZE; ++i)
-        if(!is_prime(i) && (sum_digits(i) == sum_prime(i))) // Sayının asallığını ve sayının basamakları toplamının 
-            printf("%d, ", i);                              // asal çarpanlarının basamaklarının toplamına eşitliğini sınıyorum.
+        if(!is_prime(i) && (sum_digits(i) == sum_prime(i))) 
+            printf("%d, ", i);                              
     printf("\n");
 }
-// Bu fonksiyonda sayının asallığını kontrol ediyorum.
+
 int is_prime(int val) {
     if(val == 0 || val == 1)
         return 0;
@@ -54,7 +54,6 @@ int is_prime(int val) {
             return 0;
     return 1;
 }
-// Bu fonksiyonda bir sayının basamak değerlerinin toplamını hesaplıyorum.
 int sum_digits(int val) {
     int sum = 0;
     while(val){
@@ -63,22 +62,21 @@ int sum_digits(int val) {
     }
     return sum;
 }
-// Bu fonksiyonda bir sayının asal çarpanlarının basamakları toplamını hesaplıyorum.
 int sum_prime(int val) {
     int prime = 2;
     int sum = 0;
 
     while(1 != val) {
-        if(val % prime == 0)    // Bu if deyiminde 2'den başlayarak sayının asal çarpanları bulunur.
-            if(10 < prime && is_prime(prime)) { // Bu if deyimi asal çarpan 1 basamaktan fazlaysa 
-                sum += sum_digits(prime);       // o asal çarpanın basamakları toplamını hesaplıyor.
+        if(val % prime == 0)    
+            if(10 < prime && is_prime(prime)) { 
+                sum += sum_digits(prime);       
                 val /= prime;
             }
-            else {  // Asal çarpan 1 basamaklıysa bu deyime girer.
+            else {  
             sum += prime;
             val /= prime;
             }
-        else  // Eğerki sayı asal çarpan değilse bir arttırılır ve yenisi denenir.      
+        else        
             prime++;        
     }    
     return sum;
