@@ -9,6 +9,7 @@
 */
 
 #include <stdio.h>
+
 int get_digital_root(int);
 int sum_digits(int);
 
@@ -19,6 +20,7 @@ int main() {
     scanf("%d", &val);
     printf("Digital root of %d = %d\n", val, get_digital_root(val));
 }
+
 int get_digital_root(int val) {
     int root = sum_digits(val);
     while(root >= 10)
