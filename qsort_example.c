@@ -7,15 +7,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 #define SIZE 100
 #define asize(x) (sizeof(x) / sizeof(x[0]))
+
 void swap(int *, int *);
 void bubble_sort(int *, size_t);
 void randomize(void);
 void display_array(int *, size_t);
 void set_random_array(int *, size_t);
 int icmp(const void *vp1, const void *vp2);
-
 
 int main()
 {
@@ -33,13 +34,11 @@ void randomize()
 }
 void display_array(int *pa, size_t size)
 {
-
     for (size_t i = 0; i < size; ++i)
         printf("%3d%c", pa[i], i % 20 == 19 ? '\n' : ' ');
 }
 void set_random_array(int *pa, size_t size)
 {
-
     for (size_t i = 0; i < size; ++i)
         pa[i] = rand() % 100;
 }
