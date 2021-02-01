@@ -6,6 +6,7 @@
 */
 
 #include <stdio.h>
+
 int closest_prime(int);
 int isprime(int);
 
@@ -23,7 +24,6 @@ int main() {
     return 0;
 }
 
-
 int closest_prime(int number) {
     int prime;
     if(number < 2)
@@ -33,7 +33,6 @@ int closest_prime(int number) {
             prime = i;
     return prime;
 }
-
 int isprime(int number) {
     if(number == 0 || number == 1)
         return 0;
