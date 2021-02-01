@@ -48,7 +48,6 @@ int icmp(const void *vp1, const void *vp2)
         return 1;
     return 0;
 }
-
 void swap(int *pa1, int *pa2) {
     int temp = *pa1;
     *pa1 = *pa2;
