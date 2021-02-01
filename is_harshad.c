@@ -27,11 +27,11 @@
     Kaynak : wikipedia
 */
 
-
-
 #include <stdio.h>
+
 int is_harshad(int);
 int sum_digits(int);
+
 int main() {
     int n;
     printf("Kaca kadar olan Harshad sayilarini gormek istersiniz?\n");
@@ -47,7 +47,6 @@ int main() {
 int is_harshad(int val) {
     return val % sum_digits(val) ? 0 : val;
 }
-
 int sum_digits(int val) {
     int sum = 0;
     while(val) {
