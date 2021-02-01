@@ -9,6 +9,7 @@
 */
 
 #include <stdio.h>
+
 unsigned int display_collatz(unsigned long long val);
 
 int main() {
@@ -20,7 +21,6 @@ int main() {
     unsigned count = display_collatz(uval);
     printf("Seride toplam %u kadar sayi vardir.", count);
 }
-
 unsigned int display_collatz(unsigned long long val) {
     unsigned int count = 0u;
 
@@ -36,5 +36,4 @@ unsigned int display_collatz(unsigned long long val) {
     }
     printf("\n");
     return count;
-
 }
