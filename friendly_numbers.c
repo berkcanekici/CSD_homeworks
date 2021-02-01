@@ -17,12 +17,10 @@ int main() {
     printf("Lutfen arkadas sayi oldugunu dusundugunuz 2 sayi giriniz.\n");
     scanf("%d%d", &number1, &number2);
 
-    
     if (!are_friends(number1, number2))
         printf("Bu iki sayi arkadastir.\n");
     else
         printf("Bu iki sayi arkadas degildir.\n");
-
 }
 
 int are_friends(int number1, int number2) {
